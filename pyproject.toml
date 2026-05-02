@@ -1,0 +1,16 @@
+[project]
+name = "maldemo"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.136.1",
+    "grpcio>=1.80.0",
+    "grpcio-tools>=1.80.0",
+    "protobuf>=6.33.6",
+    "uvicorn>=0.46.0",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.15.12",
+]
