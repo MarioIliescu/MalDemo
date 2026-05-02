@@ -2,6 +2,8 @@
 uv add fastapi uvicorn grpcio grpcio-tools protobuf
 
 uv add --dev ruff
+
+uv add pydantic-settings python-dotenv
 ```
 
 Create proto
