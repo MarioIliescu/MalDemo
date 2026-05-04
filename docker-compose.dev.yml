@@ -7,7 +7,7 @@ services:
       dockerfile: .devcontainer/Dockerfile
     container_name: maldev
     volumes:
-      - .:/workspace:cached
+      - .:/workspace
     working_dir: /workspace
     command: sleep infinity
     environment:
