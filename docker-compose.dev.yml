@@ -15,3 +15,5 @@ services:
       GRPC_PORT: 10081
     extra_hosts:
       - "host.docker.internal:host-gateway"
+    ports:
+      - "12080:12080"

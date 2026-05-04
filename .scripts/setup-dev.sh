@@ -42,5 +42,3 @@ uv run python -m grpc_tools.protoc \
   ./protos/*.proto
 
 echo "Dev setup complete."
-echo "Run app with:"
-echo "uv run uvicorn main:app --host 0.0.0.0 --port 8000 --reload"
