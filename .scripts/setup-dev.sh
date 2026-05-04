@@ -36,17 +36,6 @@ uv run python -m grpc_tools.protoc \
   --pyi_out=./generated \
   ./protos/user.proto
 
-echo "Checking .env..."
-if [ ! -f .env ]; then
-  cat > .env <<'EOF'
-GRPC_HOST=host.docker.internal
-GRPC_PORT=10081
-EOF
-  echo "Created .env"
-else
-  echo ".env already exists"
-fi
-
 echo "Dev setup complete."
 echo "Run app with:"
 echo "uv run uvicorn main:app --host 0.0.0.0 --port 8000 --reload"
